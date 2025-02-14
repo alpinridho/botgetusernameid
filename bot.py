@@ -23,7 +23,7 @@ async def main():
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, get_user_info))
     
     print("Bot berjalan...")
-    await application.run_polling()
+    application.run_polling()
 
 if __name__ == "__main__":
     asyncio.run(main())
