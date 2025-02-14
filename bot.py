@@ -16,7 +16,7 @@ async def get_user_info(update: Update, context) -> None:
     await update.message.reply_text(user_info)
 
 # =================================== MAIN =============================================================
-async def main():
+def main():
     application = ApplicationBuilder().token(TOKEN).build()
 
     application.add_handler(CommandHandler("start", start))
